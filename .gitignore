@@ -43,6 +43,7 @@ htmlcov/
 # Output files
 *.log
 claims_processing.log
+claims_processing_results.json
 
 # OS
 Thumbs.db
