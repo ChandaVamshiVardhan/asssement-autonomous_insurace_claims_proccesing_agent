@@ -120,8 +120,8 @@ Examples:
     with open(output_path, 'w') as f:
         json.dump(agent.results, f, indent=2)
     
-    print(f"\n✓ Results saved to: {output_path}")
-    print(f"✓ Processed {len(agent.results)} claims")
+    print(f"\n[OK] Results saved to: {output_path}")
+    print(f"[OK] Processed {len(agent.results)} claims")
     
     # Summary statistics
     if args.verbose:
