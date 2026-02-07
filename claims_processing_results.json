@@ -1,0 +1,87 @@
+[
+  {
+    "documentName": "Claim_001_Auto_Damage.txt",
+    "claimProcessing": {
+      "extractedFields": {
+        "policy_number": "POL-2024-001234",
+        "incident_date": "01/15/2024",
+        "incident_time": "14:30 PM",
+        "incident_location": "Intersection of Main St and Oak Ave, Springfield, IL 60601",
+        "incident_description": "Vehicle collision with another automobile. Minor injuries to driver. \n        Vehicle sustained significant front-end damage including broken headlight,",
+        "claimant": "John Smith",
+        "contact_details": "Details: 217-555-0123, john.smith@email.com",
+        "asset_type": "Automobile",
+        "asset_id": "VIN-2020XYZ789ABC",
+        "estimated_damage": 8500.0,
+        "claim_type": "Property Damage",
+        "attachments": [
+          "s: Police_Report.pdf, Photos.jpg"
+        ],
+        "initial_estimate": 8200.0
+      },
+      "missingFields": [
+        "policyholder_name"
+      ],
+      "investigationFlags": [],
+      "recommendedRoute": "MANUAL_REVIEW",
+      "reasoning": [
+        "Missing mandatory fields: policyholder_name"
+      ],
+      "processedAt": "2026-02-07T09:25:57.532796"
+    }
+  },
+  {
+    "documentName": "Claim_002_Injury.txt",
+    "claimProcessing": {
+      "extractedFields": {
+        "policy_number": "POL-2024-005678",
+        "incident_date": "01/20/2024",
+        "incident_location": "Office Building, 100 Commerce Dr, Chicago, IL",
+        "incident_description": "Employee sustained injury while performing job duties. \n        Incident occurred in warehouse during loading operations.",
+        "contact_details": "Information]",
+        "asset_type": "Worker Compensation Claim",
+        "estimated_damage": 45000.0,
+        "claim_type": "Bodily Injury - Workers Compensation"
+      },
+      "missingFields": [
+        "policyholder_name"
+      ],
+      "investigationFlags": [],
+      "recommendedRoute": "MANUAL_REVIEW",
+      "reasoning": [
+        "Missing mandatory fields: policyholder_name"
+      ],
+      "processedAt": "2026-02-07T09:25:57.533070"
+    }
+  },
+  {
+    "documentName": "Claim_003_Suspicious.txt",
+    "claimProcessing": {
+      "extractedFields": {
+        "policy_number": "POL-2024-009999",
+        "incident_date": "01/22/2024",
+        "incident_location": "Warehouse, Industrial Park",
+        "incident_description": "Equipment loss reported. Circumstances appear suspicious and staged. \n        Multiple inconsistencies in timeline. Fraud indicators present.",
+        "contact_details": "details, detailed incident description]",
+        "asset_type": "Industrial Equipment",
+        "estimated_damage": 120000.0,
+        "claim_type": "Equipment Loss",
+        "initial_estimate": 45000.0
+      },
+      "missingFields": [
+        "policyholder_name"
+      ],
+      "investigationFlags": [
+        "Red flag detected: 'fraud' found in incident description",
+        "Red flag detected: 'staged' found in incident description",
+        "Red flag detected: 'suspicious' found in incident description",
+        "Inconsistency detected: Large discrepancy between estimated and initial damage"
+      ],
+      "recommendedRoute": "MANUAL_REVIEW",
+      "reasoning": [
+        "Missing mandatory fields: policyholder_name"
+      ],
+      "processedAt": "2026-02-07T09:25:57.533308"
+    }
+  }
+]
